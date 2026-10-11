@@ -1,0 +1,32 @@
+{
+  "name": "agencia",
+  "description": "Kit de skills do Claude para os sites dos clientes da agência",
+  "owner": {
+    "name": "passeioempipa"
+  },
+  "plugins": [
+    {
+      "name": "agencia-kit",
+      "source": "./plugins/agencia-kit",
+      "description": "Skills próprias da agência: /agencia-kit:novo-cliente gera a identidade de marca e o contexto de marketing de um site."
+    },
+    {
+      "name": "marketing-skills",
+      "source": {
+        "source": "github",
+        "repo": "coreyhaines31/marketingskills",
+        "sha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff"
+      },
+      "description": "50 skills de marketing de Corey Haines (MIT): ai-seo, seo-audit, schema, copywriting, content-strategy e outras. Fixado num commit revisado."
+    },
+    {
+      "name": "content-ideas",
+      "source": {
+        "source": "github",
+        "repo": "bradautomates/content-ideas",
+        "sha": "17b7e527438e63d00669cefa9e9f7bf606c1cf5c"
+      },
+      "description": "Pesquisa de concorrentes no X, Instagram, TikTok e YouTube e ideias de conteúdo (Brad Automates, MIT). Precisa de chave ScrapeCreators. Fixado num commit revisado."
+    }
+  ]
+}
